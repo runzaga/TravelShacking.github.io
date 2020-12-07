@@ -6,5 +6,5 @@ permalink: /testimonials/
 
 # Why Choose Me...
 
-## Brittan, Birthing Mother
+Brittany, Birthing Mother  
 "Jen was such a big help!"
