@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html>
+  <script src="InstagramFeed.min.js"></script>
+  <script type="text/javascript">
+    var feed = new Instafeed({
+      'username': 'jenunzaga',
+    'container': "#instagram-feed-demo",
+    'items': 10
+    'items_per_row': 3
+    'display_profile': true,
+    'display_biography': true,
+    'display_gallery': true,
+    'display_igtv': false,
+    'margin': 0.5
+    'image_size': 480
+    'lazy_load': true
+    'tag': 'tags here'
+    display_captions: false
+    'styling': false
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -48,13 +65,10 @@
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
-          {% include custom.js %}
+          <div id="instagram-feed-demo" class="instagram_feed"></div>
         </footer>
       </div>
     </div>
-  <script src="InstagramFeed.min.js"></script>
-  <div id="instagram-feed-demo" class="instagram_feed"></div>
-  <script src="custom.js"></script>
 
     {% include analytics.html %}
   </body>
