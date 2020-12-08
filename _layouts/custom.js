@@ -14,5 +14,4 @@ new InstagramFeed({
     'tag': 'tags here'
     display_captions: false
     'styling': false
-    accessToken: 'greenleafs'
 });
