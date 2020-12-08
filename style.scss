@@ -99,9 +99,9 @@ h4 {
 p {
   margin: 15px 0;
 }
-
 a {
-  color: $blue;
+	font-family: $brushscript;
+	color: $blue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
