@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Interests
-permalink: /interests/
+title: About
+permalink: /about/
 ---
 
 A lot of the work I have done in school and work has been focused on C++ and C#. Some of my favorite courses I have taken have been in **Advanced High Performance Computer Architecture**, **Embedded Systems 1 & 2** and **Senior Design Project**. Go [here](projects.md) to read more about some of my favorite projects. 
