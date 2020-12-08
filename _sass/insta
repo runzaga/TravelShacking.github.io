@@ -1,0 +1,36 @@
+<script src="dist/InstagramFeed.min.js"></script>
+
+<div id="instagram-feed-demo" class="instagram_feed"></div>
+
+new InstagramFeed({
+    'username': 'jenunzaga',
+    'container': "#instagram-feed-demo",
+    'items': 10
+    'items_per_row': 3
+    'display_profile': true,
+    'display_biography': true,
+    'display_gallery': true,
+    'display_igtv': false,
+    'margin': 0.5
+    'image_size': 480
+    'lazy_load': true
+    'tag': 'tags here'
+    display_captions: false
+    'styling': false
+});
+
+.instagram_profile {
+  /* custom styles here */
+}
+
+.instagram_profile_image {
+  /* custom styles here */
+}
+
+.instagram_gallery {
+  /* custom styles here */
+}
+
+.instagram_igtv {
+  /* custom styles here */
+}
