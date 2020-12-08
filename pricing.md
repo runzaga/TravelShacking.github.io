@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Favorite Projects
-permalink: /projects/
+title: Pricing
+permalink: /pricing/
 ---
 ## School Projects
 - [Z-Wave Home Security and Automation](https://github.com/robzaga/Z-Wave) 
