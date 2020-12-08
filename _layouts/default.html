@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+	<head>
+		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
@@ -15,18 +15,14 @@
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
-  <body>
-	  	      <div id="mySidenav" class="sidenav">
-		      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		      <a href="{{ site.baseurl }}/">Home</a>
-		      <a href="{{ site.baseurl }}/interests/">Interests</a>
-		      <a href="{{ site.baseurl }}/testimonials/">Testimonials</a>
-		      <a href="{{ site.baseurl }}/projects/">Projects</a>
-	      </div>
-
-	      <!-- Use any element to open the sidenav -->
-	      <span onclick="openNav()">open</span>
-    <div class="wrapper-masthead">
+	<body>
+		<div class="sidenav">
+			<a href="{{ site.baseurl }}/">Home</a>
+			<a href="{{ site.baseurl }}/interests/">Interests</a>
+			<a href="{{ site.baseurl }}/testimonials/">Testimonials</a>
+			<a href="{{ site.baseurl }}/projects/">Projects</a>
+		</div>
+	  <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>		
