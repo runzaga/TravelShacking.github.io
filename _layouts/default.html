@@ -19,21 +19,19 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <p>
-              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-              <p class="site-description">{{ site.description }}</p>
-            </p>
-		
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>		
+		<div class="site-info">
+			<p>
+			<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+			<p class="site-description">{{ site.description }}</p>
+			</p>
 		</div>
 	      <div id="mySidenav" class="sidenav">
 		      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		      <a href="#">About</a>
-		      <a href="#">Services</a>
-		      <a href="#">Clients</a>
-		      <a href="#">Contact</a>
+		      <a href="{{ site.baseurl }}/">Home</a>
+		      <a href="{{ site.baseurl }}/interests/">Interests</a>
+		      <a href="{{ site.baseurl }}/testimonials/">Testimonials</a>
+		      <a href="{{ site.baseurl }}/projects/">Projects</a>
 	      </div>
 
 	      <!-- Use any element to open the sidenav -->
