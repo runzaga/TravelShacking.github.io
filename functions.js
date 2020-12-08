@@ -2,12 +2,12 @@
 function sendEmail(){
 	window.open('mailto:rob.unzaga@gmail.com?subject=Test&body=Hey Rob, How are you doing?')
 }
-/* Set the width of the side navigation to 250px */
+/* Open the sidenav */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "100%";
 }
 
-/* Set the width of the side navigation to 0 */
+/* Close/hide the sidenav */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
