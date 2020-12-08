@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html>
-
+	<script src="instagramFeed.js"></script>
+	<script src="jquery-1.12.4.min.js"></script>
+	<script>
+		(function($){
+			$(window).on('load', function(){
+				$.instagramFeed({
+				'username': 'robzaga',
+				'container': "#instagram-feed-demo",
+				'display_profile': true,
+				'display_biography': true,
+				'display_gallery': true,
+				'get_raw_json': false,
+				'callback': null,
+				'styling': true,
+				'items': 36,
+				'items_per_row': 6,
+				'margin': 0.3
+				});
+			});
+		})(jQuery);
+	</script>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -42,35 +62,12 @@
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
-<div class="container">	
-<div id="instagram-feed-demo" class="instagram_feed"></div>
-</div>
 
-	<script src="instagramFeed.js"></script>
-	<script src="jquery-1.12.4.min.js"></script>
-	<script>
-		(function($){
-			$(window).on('load', function(){
-				$.instagramFeed({
-				'username': 'robzaga',
-				'container': "#instagram-feed-demo",
-				'display_profile': true,
-				'display_biography': true,
-				'display_gallery': true,
-				'get_raw_json': false,
-				'callback': null,
-				'styling': true,
-				'items': 36,
-				'items_per_row': 6,
-				'margin': 0.3
-				});
-			});
-		})(jQuery);
-	</script>
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-		{% include svg-icons.html %}
+		<div id="instagram-feed-demo" class="instagram_feed"></div>
+		<!--{% include svg-icons.html %}-->
         </footer>
       </div>
     </div>
