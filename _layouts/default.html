@@ -46,12 +46,12 @@
 <div id="instagram-feed-demo" class="instagram_feed"></div>
 </div>
 
-<script src="https://www.jqueryscript.net/demo/Instagram-Photos-Without-API-instagramFeed/jquery.instagramFeed.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script>
- (function($){
-		$(window).on('load', function(){
-			$.instagramFeed({
+	<script src="https://www.jqueryscript.net/demo/Instagram-Photos-Without-API-instagramFeed/jquery.instagramFeed.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script>
+		(function($){
+			$(window).on('load', function(){
+				$.instagramFeed({
 				'username': 'robzaga',
 				'container': "#instagram-feed-demo",
 				'display_profile': true,
@@ -63,9 +63,10 @@
 				'items': 36,
 				'items_per_row': 6,
 				'margin': 0.3
+				});
 			});
-		});
-	})(jQuery);
+		})(jQuery);
+	</script>
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
