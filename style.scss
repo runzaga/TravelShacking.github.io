@@ -197,8 +197,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   margin-right: 15px;
 
   @include mobile {
@@ -234,7 +234,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $white;
   font-size: 16px;
 
   @include mobile {
