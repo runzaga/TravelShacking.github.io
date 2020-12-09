@@ -213,7 +213,6 @@ img {
    text-align: center;
   padding: 0 0;
   @include mobile {
-    text-align: center;
   }
 }
 
@@ -253,12 +252,16 @@ img {
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+	text-align: center;
+
 }
 
 .site-description {
   margin: -5px 0 0 0;
   font-size: 16px;
-	color: $lightpink;	
+	color: $lightpink;
+	    text-align: center;
+
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   @include mobile {
     margin: 3px 0;
