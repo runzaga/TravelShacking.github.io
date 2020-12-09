@@ -327,11 +327,9 @@ footer {
 .fixed-btn{
 	position: fixed;
 	right: 3%;
-	top: 10%;
+	top: 0%;
 	cursor: pointer;
+	border-radius: 3px;
+	
 }
-.fixed-btn button:active{
-	box-shadow: 0 0 ;
-}
-
 
