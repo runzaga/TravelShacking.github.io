@@ -33,7 +33,6 @@ span {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
-	position: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -318,6 +317,13 @@ nav {
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 	background-color: $lightblue;
+	position: fixed;
+}
+
+.footer {
+	position: fixed;
+}
+.bottom-footer {
 	position: fixed;
 }
 
