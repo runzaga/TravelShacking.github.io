@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script>
+			function openRightMenu() {
+				document.getElementById("rightMenu").style.opacity = "0.8";
+				document.getElementById("rightMenu").style.display = "block";
+				document.getElementById("rightMenu").style.width = "175px";
+				
+			}
+
+			function closeRightMenu() {
+				document.getElementById("rightMenu").style.display = "none";
+		</script>
 	<head>
 		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
+		
+		{% include meta.html %}
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -65,21 +76,6 @@
       </div>
     </div>
 
-    {% include analytics.html %}
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-<script src="jquery.instagramFeed.js"></script>		
-		<script>
-function openRightMenu() {
-	document.getElementById("rightMenu").style.opacity = "0.8";
-	document.getElementById("rightMenu").style.display = "block";
-	document.getElementById("rightMenu").style.width = "175px";
-				
-}
-
-function closeRightMenu() {
-  document.getElementById("rightMenu").style.display = "none";
-}
-			</script>
-
-			</body>
-		</html>
+    {% include analytics.html %}	
+	</body>
+</html>
