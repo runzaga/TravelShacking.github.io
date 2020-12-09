@@ -55,7 +55,6 @@
       {{ content }}
     </div>
 <div id="instagram-feed-demo" class="instagram_feed"></div>
-
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
@@ -65,20 +64,9 @@
     </div>
 
     {% include analytics.html %}
-		<script src="instafeed.min.js">
-		new InstagramFeed({
-    'username': 'instagram',
-    'container': "#instagram-feed-demo",
-    'display_profile': true,
-    'display_biography': true,
-    'display_gallery': true,
-    'display_igtv': false,
-});
-		</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+<script src="jquery.instagramFeed.js"></script>		
 		<script>
-
-			
-
 function openRightMenu() {
   document.getElementById("rightMenu").style.display = "block";
 				document.getElementById("rightMenu").style.width = "25%";
@@ -89,5 +77,19 @@ function closeRightMenu() {
   document.getElementById("rightMenu").style.display = "none";
 }
 			</script>
+		
+		
+		<script>
+		$(window).on('load',function(){
+  $.instagramFeed({
+    'username':'robzaga',
+    'container':"#instagram-feed-demo",
+    'display_profile':true,
+    'display_biography':true,
+    'display_igtv':false
+  });
+});
+		</script>
+
 			</body>
 		</html>
