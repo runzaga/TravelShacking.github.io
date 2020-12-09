@@ -19,16 +19,9 @@
   </head>
 	<body>
 		<header>
-			<button class="w3-button w3-white w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
-			<script>
-				$(window).scroll(function() {
-					if ($(this).scrollTop() > 200) { //I just used 200 for testing
-						$("#tester").css({ "position": "fixed", "top": 0 });
-					} else {
-						$("#tester").css({ "position": "absolute", "top": "200px" }); //same here
-					}  
-				});
-			</script>
+			<div class="container">
+				<button class="w3-button w3-white w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+			</div>
 		</header>
 		
 		<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
