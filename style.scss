@@ -317,13 +317,13 @@ nav {
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 	background-color: $lightblue;
-	position: sticky;
+	position: fixed;
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
-	position: sticky;
+	position: fixed;
 }
 
 .fixed-btn{
