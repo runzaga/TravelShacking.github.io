@@ -65,7 +65,16 @@
     </div>
 
     {% include analytics.html %}
-		<script src="instafeed.min.js"></script>
+		<script src="instafeed.min.js">
+		new InstagramFeed({
+    'username': 'instagram',
+    'container': "#instagram-feed-demo",
+    'display_profile': true,
+    'display_biography': true,
+    'display_gallery': true,
+    'display_igtv': false,
+});
+		</script>
 		<script>
 
 			
