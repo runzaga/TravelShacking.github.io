@@ -37,7 +37,7 @@ span {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $brushscript;
-  color: $solidblue;
+  color: $lightpink;
   font-weight: bold;
 
   line-height: 1.7;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 30px;
   a{
-    color: $solidblue;
+    color: $lightpink;
     text-decoration: none;
   	cursor: pointer;
     &:hover, &:active {
@@ -64,7 +64,7 @@ h1 {
 h2 {
   font-size: 24px;
   a {
-    color: $blue;
+    color: $v;
     text-decoration: none;
   	cursor: pointer;
     &:hover, &:active {
@@ -76,7 +76,7 @@ h2 {
 h3 {
   font-size: 20px;
   a {
-    color: $blue;
+    color: $lightpink;
     text-decoration: none;
   	cursor: pointer;
     &:hover, &:active {
@@ -87,7 +87,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: teal;
+  color: $lightpink;
   font-weight: bold;
   a {
     color: $blue;
@@ -110,7 +110,7 @@ a:link {
 
 a {
 	font-family: $brushscript;
-	color: $blue;
+	color: $lightpink;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -233,7 +233,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $solidblue;
+  color: $lightpink;
   cursor: pointer;
   font-family: $brushscript;
   font-weight: 300;
@@ -243,7 +243,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $solidblue;
+  color: $lightpink;
   font-size: 16px;
 
   @include mobile {
@@ -266,7 +266,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $solidblue;
+    color: $lightpink;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
