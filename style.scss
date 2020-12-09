@@ -324,3 +324,14 @@ footer {
   text-align: center;
 }
 
+.fixed-btn{
+	position: fixed;
+	right: 3%;
+	top: 10%;
+	cursor: pointer;
+}
+.fixed-btn button:active{
+	box-shadow: 0 0 ;
+}
+
+
