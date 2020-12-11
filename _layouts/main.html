@@ -1,1 +1,108 @@
+Skip to content
+Search or jump to…
 
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Robzaga 
+Robzaga
+/
+robzaga.github.io
+generated from Robzaga/robzagasample.github.io
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+robzaga.github.io/_layouts/default.html
+@Robzaga
+Robzaga Update default.html
+Latest commit 4ed168d 2 days ago
+ History
+ 1 contributor
+76 lines (67 sloc)  2.8 KB
+  
+<!DOCTYPE html>
+<html>	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script>
+		function openRightMenu() {
+			document.getElementById("rightMenu").style.opacity = "0.9";
+			document.getElementById("rightMenu").style.display = "block";
+			document.getElementById("rightMenu").style.width = "175px";
+		}
+		function closeRightMenu() {
+			document.getElementById("rightMenu").style.display = "none";
+		}
+	</script>
+	<head>
+		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		{% include meta.html %}
+		
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+		<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+		<link rel="icon" href="../resources/images/rob_icon.ico" type="image/x-icon" >
+		
+		<!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+	</head>
+	<body>		
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+  		<button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+		<a href="{{ site.baseurl }}/" class="w3-bar-item w3-button">Home</a>
+		<a href="{{ site.baseurl }}/about/" class="w3-bar-item w3-button">About</a>
+		<a href="{{ site.baseurl }}/testimonials/" class="w3-bar-item w3-button">Testimonials</a>
+		<a href="{{ site.baseurl }}/pricing/" class="w3-bar-item w3-button">Pricing</a>	
+					<a href="{{ site.baseurl }}/services/" class="w3-bar-item w3-button">Services</a>	
+					<a href="{{ site.baseurl }}/resources/" class="w3-bar-item w3-button">Resources</a>	
+
+		</div>
+		<div class="fixed-btn">
+					<button class="w3-button w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+				</div>
+		
+		<div class="wrapper-masthead">
+			<div class="top-container">
+				<header class="masthead clearfix">
+					<div class="fixed-btn">
+					<button class="w3-button w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+				</div>
+					<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+					<div class="site-info">
+						<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+					</div>
+				</header>
+			
+		</div>
+		</div>
+		
+	<div id="main" role="main" class="container">
+		{{ content }}
+	</div>
+	
+	<div class="wrapper-footer">
+		<div class="bottom-footer">
+			<footer class="footer">
+			<p>Located in</p>
+			<p>Clearfield, Utah</p>
+			<p>Contact</p>
+			<p>jenica.unzaga@gmail.com</p>
+			<p>385-498-2062</p>
+				{% include svg-icons.html %}
+			</footer>
+		</div>
+	</div>
+	
+	{% include analytics.html %}
+	</body>
+</html>
