@@ -21,7 +21,7 @@ html {
 
 body {
 	background: $myYellow;
-	font: 18px/1.4 $brushscript;
+	font: 18px/1.4 $bellscript;
 	color: $darkGray;
 	padding: 0 0 70px 0 ;
 }
@@ -51,7 +51,7 @@ span {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $brushscript;
+  font-family: $bellscript;
   color: $lightpink;
   font-weight: bold;
 
@@ -124,7 +124,7 @@ a:link {
 }
 
 a {
-	font-family: $brushscript;
+	font-family: $bellscript;
 	color: $lightpink;
   text-decoration: none;
 	cursor: pointer;
@@ -251,7 +251,7 @@ img {
   margin: 0;
   cursor: pointer;
 	color: $lightpink;
-  font-family: $brushscript;
+  font-family: $bellscript;
   font-weight: 300;
   font-size: 40px;
   letter-spacing: 1px;
@@ -274,7 +274,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $brushscript;
+  font-family: $bellscript;
   font-size: 18px;
 
   @include mobile {
