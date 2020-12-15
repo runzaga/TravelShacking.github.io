@@ -223,11 +223,13 @@ img {
 }
 
 .site-avatar {
+	float: left;
 	width: 20px;
   height: 20px;
   margin-right: 150px;
 
   @include mobile {
+	  float: left;
     display: block;
     margin: 0 auto;
   }
