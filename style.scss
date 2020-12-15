@@ -227,7 +227,7 @@ img {
 	width: 20px;
   height: 20px;
   margin-right: 150px;
-
+	padding: 20px 0 ;
   @include mobile {
 	  float: left;
     display: block;
